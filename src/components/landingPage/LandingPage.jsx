@@ -111,7 +111,6 @@ const LandingPage = () => {
 
   return (
     <div className={styles.container}>
-      {shouldRenderPromotionPopup && <PromotionPopup />}
 
       <NavBar
         onSearch={onSearch}
@@ -123,46 +122,6 @@ const LandingPage = () => {
       />
 
       <Carousel style={{ marginTop: `${navBarHeight}px` }}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image1}
-            alt="Second slide"
-            style={{ maxWidth: "100%", height: "100%", objectFit: "fill" }}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image2}
-            alt="Second slide"
-            style={{ maxWidth: "100%", height: "100%", objectFit: "fill" }}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image3}
-            alt="Second slide"
-            style={{ maxWidth: "100%", height: "100%", objectFit: "fill" }}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image4}
-            alt="Second slide"
-            style={{ maxWidth: "100%", height: "100%", objectFit: "fill" }}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={image5}
-            alt="Second slide"
-            style={{ maxWidth: "100%", height: "100%", objectFit: "fill" }}
-          />
-        </Carousel.Item>
       </Carousel>
 
       <FilterAndOrder

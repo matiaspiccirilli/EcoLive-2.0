@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
 import { getProdCategories, logOut } from "../../redux/action/actions";
 import { Link } from "react-router-dom";
-import logoImage from "../../assets/Logo.png";
+import logoImage from "../../utils/logo.jpg";
 
 const NavBar = ({ onSearch, filterCond, onNavBarHeightChange }) => {
   const [name, setName] = useState("");
@@ -76,7 +76,7 @@ const NavBar = ({ onSearch, filterCond, onNavBarHeightChange }) => {
       <img
         src={logoImage}
         alt="Logo"
-        width="130"
+        width="50"
         height="auto"
         className="d-inline-block align-top"
         style={{marginTop:"-8px"}}
